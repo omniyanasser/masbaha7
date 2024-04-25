@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masbaha</title>
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Tac+One&display=swap" rel="stylesheet">
+  <!-- Google Font  -->
+  <!-- wow css  -->
+  <link rel="stylesheet" href="css/wow.css" />
+  <!-- animate css  -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- fontawesome css  -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- mdbootstrap css  -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- style css  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body style="direction: rtl;">
+
+  <div class="container pt-2">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-primary text-center">رتّل أذكارك</h2>
+        <hr>
+        <h4 class="text-center mt-3">إجعل ذكر الله من عاداتك عسى الله أن يكرمنا و إياكم </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide1" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            سبحان الله
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide1">
+          <button onclick="increament1()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre1">0</button>
+          <button onclick="reset1()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide2" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             الله أكبر
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide2">
+          <button onclick="increament2()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre2">0</button>
+          <button onclick="reset2()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide3" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             لا إله إلا الله
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide3">
+          <button onclick="increament3()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre3">0</button>
+          <button onclick="reset3()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide4" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+              الحمد لله
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide4">
+          <button onclick="increament4()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre4">0</button>
+          <button onclick="reset4()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide5" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             رب اغفر لي
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide5">
+          <button onclick="increament5()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre5">0</button>
+          <button onclick="reset5()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide6" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+               أستغفر الله
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide6">
+          <button onclick="increament6()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre6">0</button>
+          <button onclick="reset6()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide7" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+               لا حول ولا قوة إلا بالله
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide7">
+          <button onclick="increament7()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre7">0</button>
+          <button onclick="reset7()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide8" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            اللَّهُمَّ إِنَّكَ عَفُوٌّ كَرِيمٌ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide8">
+          <button onclick="increament8()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre8">0</button>
+          <button onclick="reset8()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide9" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             اللهم صل وسلم وبارك على سيدنا محمد
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide9">
+          <button onclick="increament9()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre9">0</button>
+          <button onclick="reset9()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide10" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+              سبحان الله وبحمده سبحان الله العظيم
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide10">
+          <button onclick="increament10()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre10">0</button>
+          <button onclick="reset10()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide11" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             اللهم اغفر لى ذنبي كله دقه وجله وعلانيته وسره وأوله وآخره
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide11">
+          <button onclick="increament11()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre11">0</button>
+          <button onclick="reset11()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide12" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            الله أكبر كبيرًا  والحمد لله كثيرًا  وسبحان الله بكرةً وأصيلاً
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide12">
+          <button onclick="increament12()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre12">0</button>
+          <button onclick="reset12()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide13" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            سبحان الله والحمد لله ولا إله إلا الله والله أكبر 
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide13">
+          <button onclick="increament13()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre13">0</button>
+          <button onclick="reset13()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide14" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            لا إله إلا أنت سبحانك إني كنت من الظالمين
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide14">
+          <button onclick="increament14()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre14">0</button>
+          <button onclick="reset14()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide15" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             أستغفر الله الذى لا إله إلا هو الحي القيوم وأتوب إليه
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide15">
+          <button onclick="increament15()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre15">0</button>
+          <button onclick="reset15()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide16" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+              سبحان الله وبحمده عدد خلقه و رضا نفسه وزنة عرشه ومداد كلماته
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide16">
+          <button onclick="increament16()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre16">0</button>
+          <button onclick="reset16()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide17" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+             لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide17">
+          <button onclick="increament17()">ابدأ من هنا <i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre17">0</button>
+          <button onclick="reset17()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      <div class="col-md-6 col-12 shadow-sm">
+        <div class="list-group">
+          <h3 data-toggle="collapse" href="#hide18" class="list-group-item list-group-item-action active text-center  format-text " aria-current="true">
+            رضيت بالله ربًا، وبالإسلام دينًا، وبمحمد صلى الله عليه وسلم رسولًا
+          </h3>
+          </div>
+          <div class="format-btn collapse" id="hide18">
+          <button onclick="increament18()">ابدأ من هنا<i class="fa-solid fa-backward mr-2" style="color: #3b71ca;"></i></button>
+          <button class="btn-count" id="incre18">0</button>
+          <button onclick="reset18()">ابدأ من جديد<i class="fa-solid fa-arrow-rotate-right mr-2" style="color: #3b71ca;"></i></button>
+          </div>
+          
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container py-2">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center mt-3">اللهم اجعلها صدقة جارية لي ولكم و لموتى المسلمين</h3>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-bg-primary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://Masbaha.com/">OmniyaNasser.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- wow js -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- wow js -->
+  <!-- fontawesome js  -->
+  <script src="js/all.min.js"></script>
+  <!-- jquery js  -->
+  <script src="js/jquery.slim.min.js"></script>
+  <!-- popper js  -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js  -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- mdb js  -->
+  <script src="js/mdb.umd.min.js"></script>
+  <!-- main js  -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
